@@ -1,30 +1,85 @@
-## Orders Page
+# Mock eCommerce Website Assignment
 
-The **Orders page** in the Zoroz app allows users to view and manage their orders efficiently. It provides a comprehensive overview of all orders placed by the user, along with details such as order status, items ordered, and total amount.
+## Project Outline
 
-### Features
+### 1. Project Setup
+- **Framework**: Choose a framework (React, Next.js, etc.) for the frontend.
+- **Backend**: Set up a simple Express.js server for mock APIs.
+- **Database**: Optionally use a JSON file or an in-memory database for product data.
 
-- **Order List**: Displays a list of all orders placed by the user, showing key details for each order, such as:
-  - Order ID
-  - Order date
-  - Total amount
-  - Order status (e.g., pending, completed, canceled)
+### 2. Key Pages to Develop
+#### Homepage
+- Navigation bar with links to different pages.
+- Featured products section.
+- Categories or promotional banners.
 
-- **Order Details**: Users can click on an order to view a detailed view that includes:
-  - List of items ordered with quantities and prices
-  - Shipping information
-  - Payment status
+#### Product Listing Page
+- Display a grid or list of products with:
+  - Product image
+  - Title
+  - Price
+  - Ratings
+  - Add to cart button.
+- Filter options (e.g., by category, price range).
 
-- **Filter and Sort**: Users can filter orders by status or date and sort them to easily find specific orders.
+#### Product Detail Page
+- Detailed view of a selected product with:
+  - Large product image
+  - Description
+  - Specifications
+  - Reviews section.
+  - Add to cart functionality.
 
-- **Responsive Design**: The Orders page is fully responsive, ensuring a great experience on both desktop and mobile devices.
+#### Checkout Page
+- Form for user details (name, address, payment method).
+- Summary of items being purchased.
+- Total cost and final confirmation button.
 
-- **Real-time Updates**: Orders are updated in real-time to reflect the latest status changes, providing users with the most accurate information.
+#### Mock Payment Success/Failure Page
+- Display success or failure message based on the mock payment processing.
+- Option to return to the homepage or continue shopping.
 
-- **User-friendly Interface**: Intuitive design allows for easy navigation and management of orders.
+### 3. Mock APIs
+- Create mock API endpoints to:
+  - Fetch product inventory (GET).
+  - Handle adding products to the cart (POST).
+  - Process checkout (mock payment) (POST).
+- Example endpoints:
+  - `GET /api/products` - Returns a list of products.
+  - `POST /api/cart` - Adds a product to the cart.
+  - `POST /api/checkout` - Processes the payment.
 
-### How to Access the Orders Page
+### 4. Frontend Implementation
+- Use React components to build out the structure of each page.
+- Use state management (Context API, Redux, etc.) to handle cart state.
+- Implement routing using React Router or Next.js routing.
 
-1. Ensure you are logged into your account.
-2. Navigate to the Orders page by clicking on the "Orders" link in the navigation menu.
-3. View your orders listed chronologically, with the most recent orders displayed first.
+### 5. Backend Implementation
+- Set up an Express.js server.
+- Create routes for the mock APIs.
+- Use middleware for error handling.
+
+### 6. Styling
+- Use CSS, Tailwind CSS, or styled-components to style the pages.
+- Ensure the design is responsive.
+
+### 7. Testing and Debugging
+- Test the flow from product selection to checkout.
+- Make sure to handle edge cases (e.g., out of stock products, invalid payment details).
+
+### 8. Submission
+- Package your code in a Git repository.
+- Ensure to include a README file with:
+  - Project description.
+  - Instructions to run the application.
+  - Any additional information relevant to your submission.
+
+## Timeline
+- **Day 1**: Project setup, homepage, and product listing page.
+- **Day 2**: Product detail page and initial backend setup with mock APIs.
+- **Day 3**: Checkout page and mock payment success/failure pages.
+- **Day 4**: Testing, debugging, and final touches.
+
+---
+
+By breaking down the assignment into manageable tasks, you’ll be able to efficiently create the mock eCommerce website while showcasing your frontend and backend skills. Good luck with your assignment! If you need any help along the way, feel free to ask.
