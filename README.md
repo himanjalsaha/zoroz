@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Orders Page
 
-## Getting Started
+The **Orders page** in the Zoroz app allows users to view and manage their orders efficiently. It provides a comprehensive overview of all orders placed by the user, along with details such as order status, items ordered, and total amount.
 
-First, run the development server:
+### Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Order List**: Displays a list of all orders placed by the user, showing key details for each order, such as:
+  - Order ID
+  - Order date
+  - Total amount
+  - Order status (e.g., pending, completed, canceled)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Order Details**: Users can click on an order to view a detailed view that includes:
+  - List of items ordered with quantities and prices
+  - Shipping information
+  - Payment status
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Filter and Sort**: Users can filter orders by status or date and sort them to easily find specific orders.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Responsive Design**: The Orders page is fully responsive, ensuring a great experience on both desktop and mobile devices.
 
-## Learn More
+- **Real-time Updates**: Orders are updated in real-time to reflect the latest status changes, providing users with the most accurate information.
 
-To learn more about Next.js, take a look at the following resources:
+- **User-friendly Interface**: Intuitive design allows for easy navigation and management of orders.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### How to Access the Orders Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Ensure you are logged into your account.
+2. Navigate to the Orders page by clicking on the "Orders" link in the navigation menu.
+3. View your orders listed chronologically, with the most recent orders displayed first.
