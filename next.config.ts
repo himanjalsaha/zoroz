@@ -11,9 +11,7 @@ const nextConfig = {
       'images.unsplash.com',
       'assets.ajio.com',], // Configure allowed image domains
   },
-  experimental: {
-    outputStandalone: true,
-}
+ output:'standalone'
   // Other configurations can go here
 };
 
